@@ -7,8 +7,11 @@ Abraham Babájídé Cole is a UK based Nigerian artist working across painting, 
 
 ### `Features`
 
-studio.abrahamcole.com - site on subdomain
-design.abrahamcole.com - site on subdomain
+shop.abrahamcole.com - e-commerce web application on subdomain
+
+studio.abrahamcole.com - web application on subdomain
+
+design.abrahamcole.com - web application on subdomain
 
 
 ### `Technologies`
