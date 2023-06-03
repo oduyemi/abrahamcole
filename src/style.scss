@@ -8,6 +8,9 @@
     font-size: 12px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 
 .main_header{
@@ -39,11 +42,16 @@
 .banner{
     position: relative;
     top: 5%;
-    right: 2%;
+    right: 0%;
 }
 
 .banner_nav{
-    margin-top: 14%;
+    margin-top: 10%;
+    margin-left: -2%;
+}
+
+.container{
+    width: 100%;
 }
 
 

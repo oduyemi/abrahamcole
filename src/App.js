@@ -1,14 +1,15 @@
 import "./style.scss";
 import './App.css';
-import { Header } from "./components/Header";
+import { Navigation } from "./navigation";
 import { Banner } from "./components/Banner";
 
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Navigation />
       <Banner />
+
     </div>
   );
 }
