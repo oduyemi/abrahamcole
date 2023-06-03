@@ -22,3 +22,7 @@ SASS
 
 Tailwindcss
 
+Node JS
+
+Express JS
+
