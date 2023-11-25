@@ -1,3 +1,5 @@
+@import 'darkStyle.scss';
+
 
 
 * {
@@ -16,45 +18,63 @@ html{
 .main_header{
     height:100px;
     line-height: 80px;
-    position:absolute;
-    top:4%;
-    left:42.5%;
+    position:fixed;
+    bottom:0%;
+    left:38.5%;
 }
-
 
 .main_header a:hover{
     color: #C32F27;
 }
 
 .logo{
-    width: 60%;
-}
-.logo img{
-    position: absolute;
-    left:41.5%;
-    bottom: 7%;
+    position: fixed;
+    left:42%;
+    bottom: -2%;
 }
 
 .main_header a:hover{
     color: #C32F27;
 }
 
-.banner{
-    position: relative;
-    top: 5%;
-    right: 0%;
-}
-
-.banner_nav{
-    margin-top: 10%;
-    margin-left: -2%;
-}
-
-.container{
-    width: 100%;
+#next{
+  position: relative;
+  bottom: 10% !important;
 }
 
 
+#artistdp {
+  height: 58.2vh;
+  width: 60%;
+}
+
+#artistdp img {
+  position: relative !important;
+  top: 12% !important;
+  left: 40%;
+}
+
+.abt_header {
+  position: relative;
+  right: 10%;
+  top: 1.6%;
+}
+
+.abt_header h1 {
+  font-weight: 1000;
+  font-size: 22px;
+}
+
+#abt_content {
+  height: 80vh;
+  line-height: 24px;
+  border: 1px solid #ffffff;
+}
+
+.b_logo{
+  position: relative;
+  right:11%;
+}
 
 
 
@@ -66,26 +86,79 @@ html{
 
 
 
-
-@media only screen and (max-width: 700px) {
-    * {
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-        font-family: 'lato', sans-serif;
-        font-size: 12px;
+@media (max-width: 768px) {
+    .mobile-menu-button {
+      display: block;
+      position: relative !important;
+      left: 22% !important;
     }
-
-     .main_header{
-        height:100px;
-        position:absolute;
-        left:34%;
+  
+    #mobile-menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 60px; 
+      right: 0;
+      left: 0;
+      background-color: white;
+      z-index: 999;
+      border-top: 1px solid #ccc;
     }
-
-    .logo img{
-       width: 20%;
-       left:27%;
-    }  
+  
+    #mobile-menu.active {
+      display: flex;
+    }
+  
+    .nav-menu-wrapper{
+      display:none;
+    }
+  
+    .cta--text h6{
+      font-size: smaller !important;
+    }
+  
+    .cta--text h3{
+      font-size: medium !important;
+    }
+  
+  }
     
-      
+
+@media (max-width: 500px){
+  .banner-desc, .abt-desc{
+    position: relative;
+    top: 20%;
+  }
+  .spaced_title{
+    font-size: large !important;
+  }
+  .gold_title{
+    font-size:xx-large;
+    line-height: normal;
+  }
+  
+  .logo{
+    position: relative;
+    right: 32%;
+  }
+
+  .login{
+    position: relative;
+    left: 7%;
+  }
+
+  .consult{
+    flex-direction: column-reverse;
+  }
+
+  .consult .imgbox{
+    position: relative !important;
+    right: 14% !important;
+  }
+
+  .spaced{
+    position: relative;
+    left: 10%;
+  }
 }

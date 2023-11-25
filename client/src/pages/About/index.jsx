@@ -1,7 +1,13 @@
-const About = () => {
+import React from 'react';
+import { AboutContent } from '../../components/AboutContent';
+
+
+
+const About = () => {    
+
     return(
-        <div>
-            About
+        <div id="about-body">
+           <AboutContent />
         </div>
     )
 }

@@ -1,7 +1,9 @@
 *{
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'lato', sans-serif;
+  font-size: 12px;
 }
 
 body{
@@ -10,18 +12,10 @@ body{
 
 .App {
   color: #000;
-  background-image: url(./assets/images/guy.jpg);
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position : center;
-  box-shadow: rgba(0, 0, 0, 0.6);
-  background-color: #ffffff;
-  height: 100vh
 }
 
 #root{
   height: 100%;
-
 }
 
 

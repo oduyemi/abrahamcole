@@ -9,10 +9,10 @@ const BouncingText = () => {
     const letters = lettersRef.current;
 
     letters.forEach((letter, index) => {
-      const delay = index * 100; // Adjust the delay between each letter
+      const delay = index * 100; 
       const delayString = `${delay}ms`;
 
-      letter.style.setProperty('--letter-offset', `${index * 100}px`); // Adjust the spacing between letters
+      letter.style.setProperty('--letter-offset', `${index * 100}px`);
       letter.style.setProperty('--animation-delay', delayString);
       letter.classList.add('bouncing-letter');
     });
@@ -26,7 +26,7 @@ const BouncingText = () => {
           ref={el => (lettersRef.current[index] = el)}
           className="bouncing-letter"
           style={{
-            '--letter-offset': `${index * 100}px` // Adjust the spacing between letters
+            '--letter-offset': `${index * 100}px` 
           }}
         >
           {letter}

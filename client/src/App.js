@@ -1,16 +1,12 @@
-import "./style.scss";
 import './App.css';
 import { Navigation } from "./navigation";
-import { Banner } from "./components/Banner";
-import { Axios } from "axios";
 
 
 function App() {
+  const isLandingPage = window.location.pathname === '/';
   return (
     <div className="App">
-      <Navigation />
-      <Banner />
-
+      <Navigation isLandingPage={isLandingPage} />
     </div>
   );
 }

@@ -1,0 +1,28 @@
+// body.about{
+//   background-color: black;
+//   color: white;
+// }
+
+body.contact{
+  background-color: black;
+  color: white;
+}
+
+body.projects{
+  background-color: black;
+  color: white;
+}
+
+body.black-background {
+  background-color: black;
+  color: white;
+
+
+  .main_header.white-text {
+    color: white;
+
+    .nav-menu-wrapper a {
+      color: white !important;
+    }
+  }
+}
