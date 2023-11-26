@@ -121,7 +121,7 @@ export const SelectionCard = () => {
     return (
       <div className="h-full">
       <div className="mx-auto">
-        <h2 className="text-center text-white font-semibold text-3xl my-8">Selected Projects</h2>
+        <h2 className="text-center font-semibold text-3xl my-8">Selected Projects</h2>
       </div>
       <div className={`list${activeList} container grid grid-cols-2 gap-6 lg:grid-cols-4`}>
         {lists[activeList].map((image, index) => (
