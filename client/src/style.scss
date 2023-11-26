@@ -44,25 +44,25 @@ html{
 
 
 #artistdp {
-  height: 58.2vh;
-  width: 60%;
-}
-
-#artistdp img {
-  position: relative !important;
-  top: 12% !important;
-  left: 40%;
-}
-
-.abt_header {
+  width: 100%;
   position: relative;
-  right: 10%;
-  top: 1.6%;
+  right: 5%;
 }
+
+#artistdp video{
+  border-radius: 22px;
+  box-shadow: inset;
+}
+
 
 .abt_header h1 {
   font-weight: 1000;
   font-size: 22px;
+}
+
+.abt_header p{
+  position: relative;
+  right: 10%;
 }
 
 #abt_content {
@@ -160,5 +160,16 @@ html{
   .spaced{
     position: relative;
     left: 10%;
+  }
+
+  #artistdp {
+    position: relative !important;
+    right: 0px !important;
+  }
+
+  .abt_header p{
+    position: relative;
+    right: 0%;
+    top: -30% !important;
   }
 }
