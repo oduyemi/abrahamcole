@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import Typed from "typed.js";
-import { CloudinaryContext, Video } from "cloudinary-react";
 
 
 export const AboutContent = () => {
