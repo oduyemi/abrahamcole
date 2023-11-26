@@ -16,9 +16,8 @@ export const Header = ({ showHeader, isBlackBackground }) => {
   }
 
   const renderMobileMenu = () => {
-    if (isMobileMenuOpen) {
-      return (
-        <div className="md:hidden">
+    return isMobileMenuOpen && (
+      <div className="md:hidden">
           <Link to="/selected-projects" className="text-l block py-2 hover:text-butte">Selected Projects</Link>
           <Link to="/about" className="text-l block py-2 hover:text-butte">About</Link>
           <Link to="/body-of-works" className="text-l block py-2 hover:text-butte">Body of Works</Link>
@@ -26,13 +25,11 @@ export const Header = ({ showHeader, isBlackBackground }) => {
             Contact
           </Link>
           <Link to="/" className="text-l block py-2 hover:text-butter">
-            <img src={sitelogo} alt="logo"></img>
+            <img src={isBlackBackground ? sitelogoWhite : sitelogo} alt="logo"></img>
           </Link>
          
         </div>
       );
-    }
-    return null;
   };
 
   return (
