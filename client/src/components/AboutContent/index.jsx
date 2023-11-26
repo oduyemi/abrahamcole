@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import Typed from "typed.js";
-import about from "../../assets/videos/about.mp4";
+import { CloudinaryContext, Video } from "cloudinary-react";
+// import 
+
+
 
 export const AboutContent = () => {
   useEffect(() => {
@@ -20,20 +23,19 @@ export const AboutContent = () => {
         and he has worked as an art director for advertising and communication
         agencies, and in cultural spaces across Nigeria.`,
       ],
-      typeSpeed: 50, // typing speed in milliseconds
-      backSpeed: 30, // backspacing speed in milliseconds
-      backDelay: 2000, // delay before starting to backspace
-      startDelay: 1000, // delay before starting to type
-      loop: true, // loop the animation
+      typeSpeed: 50,
+      backSpeed: 30, 
+      backDelay: 2000, 
+      startDelay: 1000, 
+      loop: true, 
     };
 
     const typed = new Typed(".typed-text", options);
 
-    // Cleanup on component unmount
     return () => {
       typed.destroy();
     };
-  }, []); // empty dependency array ensures useEffect runs only once
+  }, []);
 
   return (
     <>
@@ -42,11 +44,15 @@ export const AboutContent = () => {
       </div>
       <div className="flex justify-center items-center flex-wrap mx-auto" id="abt_content">
         <div className="md:w-1/2">
-          <div id="artistdp">
-            <video controls width="700" height="500" autoPlay loop>
-              <source src={about} type="video/mp4" />
-            </video>
-          </div>
+            <div id="artistdp">
+                <video controls width="700" height="500" loop autoPlay>
+                    <source
+                        src={`https://res.cloudinary.com/dymd1jkbl/video/upload/v1700992367/abecole/about/about_bsdxew.mp4`}
+                        type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </div>
         <div className="md:w-1/3 sm:w-full  abt_header">
           <div>
