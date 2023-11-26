@@ -5,7 +5,7 @@ import '../typewriter.scss';
 export const Typewriter = () => {
   const [showText, setShowText] = useState(false);
   const [text, setText] = useState('');
-  const fullText = 'Good Design is a Language';
+  const fullText = 'Art is a Language';
 
   useEffect(() => {
     let timeout;
