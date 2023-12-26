@@ -10,7 +10,7 @@ export const Resume = () => {
                     <div className="bg-primary p-6 rounded-lg shadow-lg text-white ">
                         <h1 className="text-3xl font-semibold">Abraham Cole</h1>
                         <p className="text-gray-300">Artist</p>
-                        <hr className="my-4" />
+                        <hr className="my-4 border-t border-gray-600" />
                         <h2 className="text-xl font-semibold mb-2">Summary</h2>
                         <p className="text-gray-400">
                             Experienced web developer with a passion for creating responsive and user-friendly
