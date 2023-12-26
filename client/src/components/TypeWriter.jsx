@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { Transition } from '@headlessui/react';
-import '../typewriter.scss';
+import React, { useEffect, useState } from "react";
+import { Transition } from "@headlessui/react";
+import "../typewriter.scss";
 
 export const Typewriter = () => {
   const [showText, setShowText] = useState(false);
-  const [text, setText] = useState('');
-  const fullText = 'Art is a Language';
+  const [text, setText] = useState("");
+  const fullText = "Art is a Language";
 
   useEffect(() => {
     let timeout;

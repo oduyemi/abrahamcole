@@ -1,7 +1,7 @@
 *{
   box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   font-family: 'lato', sans-serif;
   font-size: 12px;
 }
@@ -18,5 +18,26 @@ body{
   height: 100%;
 }
 
+.project_grid{
+  position: relative;
+  left:12%;
+  overflow-x: hidden;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  #root{
+    height:auto;
+  }
+  .project_grid{
+    position: relative;
+    left:0;
+  }
+}
 
 

@@ -1,4 +1,4 @@
-@import 'darkStyle.scss';
+@import "darkStyle.scss";
 
 
 
@@ -6,7 +6,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
     font-size: 12px;
 }
 
@@ -17,10 +17,10 @@ html{
 
 .main_header{
     height:100px;
-    line-height: 80px;
+    line-height: 96px;
     position:fixed;
     bottom:0%;
-    left:38.5%;
+    left:37%;
 }
 
 .main_header a:hover{
@@ -71,11 +71,24 @@ html{
   border: 1px solid #ffffff;
 }
 
+.contact_header{
+  background-image: url("../src/assets/images/projects/9.jpg"),
+  url("../src/assets/images/projects/4.png"),
+  url("../src/assets/images/projects/14.jpg");
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
 .b_logo{
   position: relative;
   right:11%;
 }
 
+.blac{
+  color: #000 !important;
+}
 
 
 
@@ -90,7 +103,8 @@ html{
     .mobile-menu-button {
       display: block;
       position: relative !important;
-      left: 22% !important;
+      left: 15% !important;
+      top: -5%;
     }
   
     #mobile-menu {
@@ -109,11 +123,24 @@ html{
     #mobile-menu.active {
       display: flex;
     }
-  
+
     .nav-menu-wrapper{
       display:none;
     }
+
+    .nav-icon{
+      display: grid;
+    }
+
+    .logo{
+      margin-top: -4%; /* Adjust the margin-top property to move the logo up by 2% */
+      margin-left: -58%;
+    }
   
+    
+
+    
+
     .cta--text h6{
       font-size: smaller !important;
     }
@@ -141,6 +168,7 @@ html{
   .logo{
     position: relative;
     right: 32%;
+    bottom: 50%;
   }
 
   .login{

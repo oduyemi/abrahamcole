@@ -1,5 +1,5 @@
-import React from 'react';
-import { AboutContent } from '../../components/AboutContent';
+import React from "react";
+import { AboutContent } from "../../components/AboutContent";
 
 
 

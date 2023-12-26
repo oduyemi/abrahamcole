@@ -6,7 +6,7 @@
 
 @layer base{
   @font-face {
-    font-family: 'sf-pro-display';
+    font-family: "sf-pro-display";
     src: "./assets/fonts/sf-pro-display/SFPRODISPLAYREGULAR.OTF";
     font-weight: 400;
     font-display: swap;
@@ -14,7 +14,7 @@
   }
 
   @font-face {
-    font-family: 'sf-pro-display';
+    font-family: "sf-pro-display";
     src: "./assets/fonts/sf-pro-display/SFPRODISPLAYMEDIUM.OTF";
     font-weight: 500;
     font-display: swap;
@@ -22,7 +22,7 @@
   }
 
   @font-face {
-    font-family: 'sf-pro-display';
+    font-family: "sf-pro-display";
     src: "./assets/fonts/sf-pro-display/SFPRODISPLAYBOLD.OTF";
     font-weight: 700;
     font-display: swap;

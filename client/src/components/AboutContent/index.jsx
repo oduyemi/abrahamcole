@@ -7,18 +7,21 @@ export const AboutContent = () => {
     // Options for the Typed.js instance
     const options = {
       strings: [
-        `Abraham Cole Studio, is a artist studio based in Birmingham, United Kingdom, is 
-        currently achieving and documenting its painting and art project on accessible online
-        platforms as a digital portfolio. The main aim of this project is to design,
-        develop an appealing showroom tailored to attract world-class art collectors and
-        primarily get a gallery representations and shows by contemporary art spaces.<br/><br/>
-        Abraham Babájídé Cole is a UK based Nigerian artist working across painting,
-        drawings, illustration, and digital design. He draws inspiration from nature,
-        antiques, and the magic of blending multiple visual forms in engaging with
-        conversations around migration, the human condition and politics.<br /><br />
-        Abraham is a graduate of the Yaba College of Technology School of Art,
-        and he has worked as an art director for advertising and communication
-        agencies, and in cultural spaces across Nigeria.`,
+        `Abraham Babájídé Cole is a UK based Nigerian artist working expresses his creativity through a diverse range of mediums, 
+        including painting, drawings, illustration, mix media and digital design.<br>
+        Drawing inspiration from nature, antiques, and the amalgamation
+        of various visual elements, Cole actively engages in conversations
+        surrounding migration, the human condition, and politics.<br><br>
+        A graduate of the Yaba College of Technology School of Art,
+        Abraham has accumulated extensive experience as an art and
+        creative director in the advertising and communication industry.
+        His achievements include multiple creative awards, and his
+        influence extends into various cultural spaces across Nigeria.<br><br>
+        As a visionary artist, his central focus lies in utilizing various forms
+        of conceptualization and engaging ideas to effectively communicate
+        the nuances of everyday experiences within the world he inhabits.
+        Join him on his artistic journey and witness the evolution of his
+        creative exploration.`,
       ],
       typeSpeed: 50,
       backSpeed: 30, 

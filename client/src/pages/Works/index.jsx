@@ -1,8 +1,10 @@
-
+import { SelectionCard } from "../../components/Selection"
 
 const Works = () => {
     return(
-       <>Body of Works</>
+        <div>
+        <SelectionCard />
+    </div>
     )
 }
 

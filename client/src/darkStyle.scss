@@ -2,9 +2,10 @@
 body.contact{
   background-color: black;
   color: white;
+  overflow-y: hidden;
 }
 
-body.projects{
+body.cv{
   background-color: black;
   color: white;
 }
@@ -20,5 +21,14 @@ body.black-background {
     .nav-menu-wrapper a {
       color: white !important;
     }
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  body.contact{
+    overflow-y: auto;
   }
 }
