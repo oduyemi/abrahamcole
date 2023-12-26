@@ -85,8 +85,8 @@ export const ContactUs = () => {
                         </label>
                         </div>
                         <Button type="button" data-te-ripple-init data-te-ripple-color="light"
-                        className="inline-block w-full rounded bg-[#C32F27] px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal transition duration-150 ease-in-out  lg:mb-0">
-                        Send
+                            className="inline-block w-full rounded bt px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal transition duration-150 ease-in-out  lg:mb-0">
+                            Send
                         </Button>
                     </form>
                     </div>
