@@ -1,10 +1,10 @@
 #landing-body{
-    background-image: url(./assets/images/guy.jpg);
-    background-size: auto;
+    background-image: url(./assets/images/bg.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position : center;
     box-shadow: rgba(0, 0, 0, 0.6);
-    background-color: #ffffff;
+    // background-color: #ffffff;
     height: 100vh;
 }
 
@@ -13,4 +13,10 @@
     bottom: 14%;
 }
 
+@media (max-width: 768px) {
+    #landing-body{
+        background-size: cover;
+        overflow: hidden !important;
+    }
+}
 

@@ -32,7 +32,7 @@ export const SelectionCard = () => {
         title: "MR. SPEAKER. 2023",
       },
       {
-        imageUrl: require("../../assets/images/projects/c.jpg"),
+        imageUrl: require("../../assets/images/projects/0.jpg"),
         title: "EYE OPENER. 2023",
       },
     ],

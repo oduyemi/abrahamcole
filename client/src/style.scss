@@ -18,9 +18,9 @@ html{
 .main_header{
     height:100px;
     line-height: 96px;
-    position:fixed;
+    position: absolute;
     bottom:0%;
-    left:37%;
+    left:40.8%;
 }
 
 .main_header a:hover{
@@ -28,10 +28,17 @@ html{
 }
 
 .logo{
-    position: fixed;
-    left:42%;
+    position: absolute;
+    left:21%;
     bottom: -2%;
 }
+
+// #landing-logo{
+//   position: absolute;
+//   left:21%;
+//   bottom: -7%;
+// }
+
 
 .main_header a:hover{
     color: #C32F27;
@@ -85,10 +92,13 @@ html{
   right:11%;
 }
 
-.blac{
-  color: #000 !important;
+.bt{
+  background-color: #C32F27 !important;
 }
 
+.bt:hover{
+  background-color: rgb(169, 172, 176) !important;
+}
 
 
 
@@ -114,7 +124,7 @@ html{
       top: 60px; 
       right: 0;
       left: 0;
-      background-color: white;
+      // background-color: #ffffff;
       z-index: 999;
       border-top: 1px solid #ccc;
     }
@@ -132,7 +142,7 @@ html{
     }
 
     .logo{
-      margin-top: -4%; /* Adjust the margin-top property to move the logo up by 2% */
+      margin-top: -4%; 
       margin-left: -58%;
     }
   

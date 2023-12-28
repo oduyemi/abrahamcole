@@ -1,44 +1,23 @@
-
-body.contact{
-  background-color: black;
-  color: white;
+body.contact {
   overflow-y: hidden;
 }
 
-body.cv{
-  background-color: black;
-  color: white;
+body.black-background .black-logo {
+  filter: invert(1);
 }
 
-body.black-background {
+body.cv,
+body.contact {
   background-color: black;
-  color: white;
-
-
-  .main_header.white-text {
-    color: white;
-
-    .nav-menu-wrapper a {
-      color: white !important;
-    }
-  }
+  color: #fff;
 }
 
-
-
+body .black-logo {
+  filter: invert(1);
+}
 
 @media (max-width: 768px) {
-  body.contact{
+  body.contact {
     overflow-y: auto;
   }
-}
-
-
-
-.bt{
-  background-color: #C32F27 !important;
-}
-
-.bt:hover{
-  background-color: rgb(169, 172, 176) !important;
 }
