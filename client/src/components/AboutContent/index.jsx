@@ -2,13 +2,13 @@ import React, { useEffect } from "react";
 import Typed from "typed.js";
 
 
+
 export const AboutContent = () => {
   useEffect(() => {
-    // Options for the Typed.js instance
     const options = {
       strings: [
         `Abraham Babájídé Cole is a UK based Nigerian artist working expresses his creativity through a diverse range of mediums, 
-        including painting, drawings, illustration, mix media and digital design.<br>
+        including painting, drawings, illustration, mix media and digital design.
         Drawing inspiration from nature, antiques, and the amalgamation
         of various visual elements, Cole actively engages in conversations
         surrounding migration, the human condition, and politics.<br><br>
@@ -21,13 +21,14 @@ export const AboutContent = () => {
         of conceptualization and engaging ideas to effectively communicate
         the nuances of everyday experiences within the world he inhabits.
         Join him on his artistic journey and witness the evolution of his
-        creative exploration.`,
+        creative exploration. <br /><br />
+        <img src="../../assets/images/sign.png" alt="signature" width="40%" />`,
       ],
       typeSpeed: 50,
-      backSpeed: 30, 
-      backDelay: 2000, 
+      // backSpeed: 30, 
+      // backDelay: 2000, 
       startDelay: 1000, 
-      loop: true, 
+      // loop: true, 
     };
 
     const typed = new Typed(".typed-text", options);
@@ -36,7 +37,6 @@ export const AboutContent = () => {
       typed.destroy();
     };
   }, []);
-
   return (
     <>
       <div className="abt_header mb-4 mt-14">
@@ -55,9 +55,7 @@ export const AboutContent = () => {
             </div>
         </div>
         <div className="md:w-1/3 sm:w-full  abt_header">
-          <div>
-            <p className="mt-6 mx-auto text-l mb-10 typed-text"></p>
-          </div>
+          <div className="mt-6 mx-auto text-l mb-10 typed-text"></div>
         </div>
       </div>
     </>

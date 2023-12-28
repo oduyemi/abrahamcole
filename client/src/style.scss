@@ -33,6 +33,10 @@ html{
     bottom: -2%;
 }
 
+// .logo Link img{
+//   width: auto;
+// }
+
 // #landing-logo{
 //   position: absolute;
 //   left:21%;
@@ -75,7 +79,6 @@ html{
 #abt_content {
   height: 80vh;
   line-height: 24px;
-  border: 1px solid #ffffff;
 }
 
 .contact_header{
@@ -92,6 +95,14 @@ html{
   right:11%;
 }
 
+
+.project_grid{
+  position: relative;
+  left:13.2%;
+  overflow-x: hidden;
+}
+
+
 .bt{
   background-color: #C32F27 !important;
 }
@@ -100,7 +111,13 @@ html{
   background-color: rgb(169, 172, 176) !important;
 }
 
+.text-white {
+  color: #fff !important;
+}
 
+.text-black {
+  color: #000 !important;
+}
 
 
 
@@ -210,3 +227,4 @@ html{
     top: -30% !important;
   }
 }
+

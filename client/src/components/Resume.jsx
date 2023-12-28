@@ -83,7 +83,7 @@ export const Resume = () => {
                             <li>Email: info@abrahamcole.co.uk</li>
                             <li>LinkedIn: <a href="#"
                                     className="text-blue-500 hover:underline">linkedin.com/in/abraham-cole</a></li>
-                            <li>Website: <a href="https://www.abrahamcole.co.uk" className="text-blue-500 hover:underline">johndoe.com</a>
+                            <li>Website: <a href="https://www.abrahamcole.co.uk" className="text-blue-500 hover:underline">abrahamcole.co.uk</a>
                             </li>
                         </ul>
                         <h2 className="text-xl font-semibold mt-4 mb-2">Reference</h2>
