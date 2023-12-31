@@ -132,10 +132,10 @@ export const SelectionCard = () => {
   const currentCollection2Images = collection2Images;
   const currentCollection3Images = collection3Images;
   return (
-    <div className="container">
+    <div className="containerd">
       <div className="h-full text-center">
         <h2 className="font-semibold text-3xl my-10">Selected Projects</h2>
-        <div className="flex items-center justify-center gap-6 container project_grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="flex items-center justify-center gap-6 containerd project_grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="flex flex-col items-center">
             <img
               src={currentCollection1Images[currentImage1Index].src}

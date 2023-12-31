@@ -1,26 +1,25 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../style.scss";
+// import "../style.scss";
 import sitelogo from "../assets/images/logo/sitelogo.png";
 import sitelogoWhite from "../assets/images/logo/sitelogo_white.png";
 
-// export const Header = ({ showHeader, isBlackBackground }) => {
 
-export const Header = ({ isWhiteBackground }) => {
+  export const Header = ({ isWhiteBackground = false }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState("");
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  // if (!showHeader) {
-  //   return null;
-  // }
-
   const renderMobileMenu = () => {
+   
     return (
       isMobileMenuOpen && (
         <div className="md:hidden">
+          <Link to="/" className="text-l block py-2 hover:text-butter">
+            Home
+          </Link>
           <Link to="/about" className="text-l block py-2 hover:text-butter">
             About
           </Link>
@@ -49,12 +48,10 @@ export const Header = ({ isWhiteBackground }) => {
   };
   
   return (
-    <header>
+    <header className={`bg-transparent main_header`}>
       <nav
         id="header"
-        className={`bg-transparent main_header ${
-          isWhiteBackground ? "white-text" : "black-text"
-        }`}
+        className={`bg-transparent }`}
       >
         <div className="mt-0 py-1 flex items-center nav-icon justify-between">
           <div className="mobile-menu-button md:hidden">
@@ -76,11 +73,12 @@ export const Header = ({ isWhiteBackground }) => {
           </div>
           <div className="mx-auto logo">
             <Link to="/" className="text-l block py-2 w-full">
-              <img
-                src={!isWhiteBackground ? sitelogo : sitelogoWhite}
-                alt="logo"
-                width="50%"
-              />
+            <img
+              src={isWhiteBackground ? sitelogoWhite : sitelogo}
+              alt="logo"
+              width="60%"
+              className={isWhiteBackground ? "white-logo" : "black-logo"}
+            />
             </Link>
           </div>
           <ul
@@ -89,9 +87,15 @@ export const Header = ({ isWhiteBackground }) => {
           >
             <li>
               <Link
+                to="/"
+                className={`hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:p-0`}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
                 to="/about"
                 className={`hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:p-0`}
-                style={{ color: isWhiteBackground ? "#000" : "#fff" }}
               >
                 About
               </Link>
@@ -100,7 +104,6 @@ export const Header = ({ isWhiteBackground }) => {
               <Link
                 to="/cv"
                 className={`hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:p-0`}
-                style={{ color: isWhiteBackground ? "#000" : "#fff" }}
               >
                 Curriculum Vitae
               </Link>
@@ -109,7 +112,6 @@ export const Header = ({ isWhiteBackground }) => {
               <Link
                 to="/body-of-works"
                 className={`hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:p-0`}
-                style={{ color: isWhiteBackground ? "#000" : "#fff" }}
               >
                 Body of Works
               </Link>
@@ -118,7 +120,6 @@ export const Header = ({ isWhiteBackground }) => {
               <Link
                 to="/contact"
                 className={`hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:p-0`}
-                style={{ color: isWhiteBackground ? "#000" : "#fff" }}
               >
                 Contact
               </Link>

@@ -20,7 +20,13 @@ body{
 
 
 
+.white-text {
+  color: #fff !important;
+}
 
+.black-text {
+  color: #000 !important;
+}
 
 
 

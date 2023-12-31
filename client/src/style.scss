@@ -15,17 +15,20 @@ html{
 }
 
 
-.main_header{
-    height:100px;
-    line-height: 96px;
-    position: absolute;
-    bottom:0%;
-    left:40.8%;
+.main_header {
+  height: 100px;
+  line-height: 96px;
+  position: absolute;
+  bottom: 0%;
+  left: 40.8%;
+  color: #777777 !important;
 }
 
-.main_header a:hover{
-    color: #C32F27;
+.main_header nav a:hover {
+  color: #C32F27;
+  margin-top: -5%;
 }
+
 
 .logo{
     position: absolute;
@@ -102,7 +105,7 @@ html{
 }
 
 
-.container {
+.containerd {
   display: flex;
   flex-direction: row;
   justify-content: center;
