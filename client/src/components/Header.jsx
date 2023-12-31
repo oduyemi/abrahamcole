@@ -38,9 +38,9 @@ export const Header = ({ isWhiteBackground }) => {
           </Link>
           <Link to="/" className="text-l block py-2 hover:text-butter">
             <img
-              src={!isWhiteBackground ? sitelogoWhite : sitelogo}
+              src={isWhiteBackground ? sitelogoWhite : sitelogo}
               alt="logo"
-              className={!isWhiteBackground ? "black-logo" : "white-logo"}
+              className={isWhiteBackground ? "white-logo" : "black-logo"}
             />
           </Link>
         </div>

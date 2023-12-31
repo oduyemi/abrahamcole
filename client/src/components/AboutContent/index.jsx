@@ -45,13 +45,7 @@ export const AboutContent = () => {
       <div className="flex justify-center items-center flex-wrap mx-auto" id="abt_content">
         <div className="md:w-1/2">
             <div id="artistdp">
-                <video controls width="700" height="500" loop autoPlay>
-                    <source
-                        src={`https://res.cloudinary.com/dymd1jkbl/video/upload/v1700992367/abecole/about/about_bsdxew.mp4`}
-                        type="video/mp4"
-                    />
-                    Your browser does not support the video tag.
-                </video>
+                <img src={require("../../assets/images/dp.jpg")} alt="Artist" width="60%" />
             </div>
         </div>
         <div className="md:w-1/3 sm:w-full  abt_header">

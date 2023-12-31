@@ -48,23 +48,12 @@ html{
     color: #C32F27;
 }
 
-#next{
-  position: relative;
-  bottom: 10% !important;
-}
-
 
 #artistdp {
-  width: 100%;
+  width: 90%;
   position: relative;
-  right: 5%;
+  left: 5%;
 }
-
-#artistdp video{
-  border-radius: 22px;
-  box-shadow: inset;
-}
-
 
 .abt_header h1 {
   font-weight: 1000;
@@ -74,10 +63,11 @@ html{
 .abt_header p{
   position: relative;
   right: 10%;
+  margin: auto;
 }
 
 #abt_content {
-  height: 80vh;
+  height: 70vh;
   line-height: 24px;
 }
 
@@ -94,14 +84,6 @@ html{
   position: relative;
   right:11%;
 }
-
-
-.project_grid{
-  position: relative;
-  left:13.2%;
-  overflow-x: hidden;
-}
-
 
 .bt{
   background-color: #C32F27 !important;
@@ -120,7 +102,50 @@ html{
 }
 
 
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
 
+.h-full {
+  width: 100%;
+}
+
+.project_grid {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr)); 
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left:10%;
+}
+
+
+.image-container {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 10px; 
+}
+
+.image-title {
+  text-align: center;
+  z-index: 1;
+  padding: 10px;
+}
 
 
 
