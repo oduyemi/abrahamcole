@@ -10,13 +10,12 @@
     font-size: 12px;
 }
 
+
 body{
-    scroll-behavior: smooth;
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
 }
 
-body.home{
-  overflow: hidden;
-}
 
 .main_header {
   height: 100px;
@@ -74,7 +73,6 @@ body.home{
 
 .selection{
   height: 80vh;
-  border: 4px solid red;
 }
 
 .contact_header{
@@ -155,44 +153,88 @@ body.home{
 }
 
 
+
 @media (max-width: 768px) {
-    .mobile-menu-button {
-      display: block;
-      position: relative !important;
-      left: 15% !important;
-      top: -7%;
-    }
+  .mobile-menu-button {
+    display: block;
+    position: relative;
+    // right: 15%;
+    top: -7%;
+   width: 100%;
+  }
+
+  #mobile-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.99);
+    top: 40px; 
+    right: 0;
+    left: 0;
+    z-index: 999;
+  }
+
+  #mobile-menu:hover{
+    color: #C32F27;
+  }
   
-    #mobile-menu {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      position: absolute;
-      color: #C32F27;
-      top: 40px; 
-      right: 0;
-      left: 0;
-      // background-color: #ffffff;
-      z-index: 999;
-      border-top: 1px solid #ccc;
-    }
-  
-    #mobile-menu.active {
-      display: flex;
-    }
+  .nav-menu-wrapper {
+    display: none;
+  }
 
-    .nav-menu-wrapper{
-      display:none;
-    }
+  .nav-icon {
+    display: block;
+    margin: 2%; 
+    padding: 2%;
+  }
 
-    .nav-icon{
-      display: grid;
-    }
+  .logo {
+    width: 90%;
+    margin-top: -4%;
+    margin-left: -36%;
+  }
 
-    .logo{
-      margin-top: -4%; 
-      margin-left: -36%;
-    }
+  .mobile-menu-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+
+  .mobile-menu-content {
+    padding: 20px;
+  }
+
+  .close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #C32F27;
+    margin-bottom: 10px;
+  }
+
+
+  .mobile-menu-link {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+
+  .mobile-menu-link:hover {
+    background: #eee;
+  }
   
     .abt_header .typed-text{
       position: relative;
@@ -234,20 +276,6 @@ body.home{
     position: relative;
     right: 32%;
     bottom: 50%;
-  }
-
-  .login{
-    position: relative;
-    left: 7%;
-  }
-
-  .consult{
-    flex-direction: column-reverse;
-  }
-
-  .consult .imgbox{
-    position: relative !important;
-    right: 14% !important;
   }
 
   .spaced{
