@@ -132,19 +132,19 @@ export const SelectionCard = () => {
   const currentCollection2Images = collection2Images;
   const currentCollection3Images = collection3Images;
   return (
-    <div className="containerd">
-      <div className="h-full text-center">
-        <h2 className="font-semibold text-3xl my-10">Selected Projects</h2>
-        <div className="flex items-center justify-center gap-6 containerd project_grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div className="selection">
+      <div className="grid-h-full mx-auto text-center">
+        <h2 className="font-semibold text-3xl my-6">Selected Projects</h2>
+        <div className="flex items-center justify-between gap-6  project_grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
           <div className="flex flex-col items-center">
             <img
               src={currentCollection1Images[currentImage1Index].src}
-              className="w-full h-4/5 rounded my-6"
+              className="w-full h-3/4 rounded my-6"
               alt={`Collection Image ${currentImage1Index + 1}`}
               onClick={openModal1}
             />
             <p className="text-center text-black image-title">
-              {currentCollection1Images[currentImage1Index].title}
+              Collection 1
             </p>
             <CustomModal
               isOpen={modal1IsOpen}
@@ -187,7 +187,7 @@ export const SelectionCard = () => {
               alt={`Collection Image ${currentImage2Index + 1}`}
               onClick={openModal2}
             />
-            <p className="text-center text-black image-title">{currentCollection2Images[currentImage2Index].title}</p>
+            <p className="text-center text-black image-title">Collection 2</p>
             <CustomModal
               isOpen={modal2IsOpen}
               onRequestClose={closeModal2}
@@ -224,7 +224,7 @@ export const SelectionCard = () => {
               alt={`Collection Image ${currentImage3Index + 1}`}
               onClick={openModal3}
             />
-            <p className="text-center text-black image-title">{currentCollection3Images[currentImage3Index].title}</p>
+            <p className="text-center text-black image-title">Collection 3</p>
             <CustomModal
               isOpen={modal3IsOpen}
               onRequestClose={closeModal3}

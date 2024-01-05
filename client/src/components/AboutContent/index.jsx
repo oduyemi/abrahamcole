@@ -39,7 +39,7 @@ export const AboutContent = () => {
   }, []);
   return (
     <>
-      <div className="abt_header mb-4 mt-14">
+      <div className="abt_header mb-4 mt-8">
         <h1 className="text-center">About</h1>
       </div>
       <div className="flex justify-center items-center flex-wrap mx-auto" id="abt_content">

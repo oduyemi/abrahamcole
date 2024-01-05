@@ -35,13 +35,13 @@ import sitelogoWhite from "../assets/images/logo/sitelogo_white.png";
           <Link to="/contact" className="text-l block py-2 hover:text-butter">
             Contact
           </Link>
-          <Link to="/" className="text-l block py-2 hover:text-butter">
+          {/* <Link to="/" className="text-l block py-2 hover:text-butter">
             <img
               src={isWhiteBackground ? sitelogoWhite : sitelogo}
               alt="logo"
               className={isWhiteBackground ? "white-logo" : "black-logo"}
             />
-          </Link>
+          </Link> */}
         </div>
       )
     );
@@ -76,7 +76,7 @@ import sitelogoWhite from "../assets/images/logo/sitelogo_white.png";
             <img
               src={isWhiteBackground ? sitelogoWhite : sitelogo}
               alt="logo"
-              width="60%"
+              width="96%"
               className={isWhiteBackground ? "white-logo" : "black-logo"}
             />
             </Link>
